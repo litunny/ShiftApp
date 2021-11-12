@@ -11,25 +11,62 @@ struct ShiftView: View {
     
     @StateObject var shiftData = ShiftViewModel()
     
+    @FetchRequest(entity: Shift.entity(), sortDescriptors: [NSSortDescriptor(key : "date", ascending: true)], animation: .spring()) var results : FetchedResults<Shift>
+    
     var body: some View {
-        ScrollView {
+        
+        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom), content: {
             VStack {
-                ForEach(0..<50) {_ in
-                    ShiftRowWidget()
-                    Divider()
-                }
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    LazyVStack(alignment: .leading, spacing: 20, content: {
+                        ForEach(results) { result in
+                            ShiftRowWidget(shift: result)
+                            Divider()
+                        }
+                    })
+                })
+                 .padding()
             }
-        }
+            
+            Button(action: { shiftData.isNewData.toggle() }) {
+                Image(systemName: "plus")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding(20)
+                    .background(Color("Color"))
+                    .clipShape(Circle())
+            }.padding()
+        })
         .navigationTitle("Shift")
         .toolbar {
             Button(action: {
                 shiftData.isNewData.toggle()
             }) {
-               Image(systemName: "plus")
+                Image(systemName: "plus")
             }
-        }.sheet(isPresented: $shiftData.isNewData, content: {
-            CreateShiftView(shiftData: shiftData)
+        }
+        .sheet(isPresented: $shiftData.isNewData, content: {
+             CreateShiftView(shiftData: shiftData)
         })
+        
+//        ScrollView {
+//            VStack {
+//                ForEach(0..<50) {_ in
+//                    ShiftRowWidget()
+//                    Divider()
+//                }
+//            }
+//        }
+//        .navigationTitle("Shift")
+//        .toolbar {
+//            Button(action: {
+//                shiftData.isNewData.toggle()
+//            }) {
+//               Image(systemName: "plus")
+//            }
+//        }.sheet(isPresented: $shiftData.isNewData, content: {
+//            CreateShiftView(shiftData: shiftData)
+//        })
     
     }
 }

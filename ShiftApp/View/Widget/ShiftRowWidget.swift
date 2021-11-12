@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ShiftRowWidget: View {
+    var shift : Shift
     var body: some View {
         HStack(spacing : 20) {
             
@@ -21,11 +22,11 @@ struct ShiftRowWidget: View {
             
             VStack(alignment: .leading) {
                 
-                Text("John Doe")
+                Text(shift.name ?? "")
                     .font(.title3)
                     .fontWeight(.bold)
                 
-                Text("Waitress")
+                Text(shift.role ?? "")
                     .font(.body)
             }
             
@@ -33,7 +34,7 @@ struct ShiftRowWidget: View {
             
             VStack(alignment:.trailing) {
                 Text("9 - 12 PM")
-                Text("FRI 4/10")
+                Text(shift.date ?? Date(), style: .date)
                     .fontWeight(.bold)
             }
             
@@ -41,8 +42,8 @@ struct ShiftRowWidget: View {
     }
 }
 
-struct ShiftRowWidget_Previews: PreviewProvider {
-    static var previews: some View {
-        ShiftRowWidget()
-    }
-}
+//struct ShiftRowWidget_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ShiftRowWidget(shift: Shift())
+//    }
+//}

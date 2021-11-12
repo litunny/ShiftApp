@@ -69,6 +69,8 @@ struct CreateShiftView: View {
                  .cornerRadius(8)
             }
             .padding(.bottom, 40)
+            .disabled(shiftData.name == "" ? true : false )
+            .opacity(shiftData.name == "" ? 0.5 : 1)
         }
         .background(Color.black.opacity(0.06))
         .ignoresSafeArea(.all, edges: .bottom )
