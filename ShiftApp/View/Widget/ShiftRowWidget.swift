@@ -16,7 +16,7 @@ struct ShiftRowWidget: View {
                 
             }
             .frame(width: 50, height: 50)
-            .background(Color.gray)
+            .background(Color(shift.color ?? "Gray"))
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             
             

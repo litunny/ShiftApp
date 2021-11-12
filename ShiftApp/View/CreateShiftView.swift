@@ -65,9 +65,15 @@ struct CreateShiftView: View {
                 .padding()
                 
                 HStack (spacing: 40) {
-                    DateButtonWidget(title: "Today", shiftData: shiftData)
-                
-                    //DateButtonWidget(title: "Tomorrow", shiftData: homeData)
+                    Text("Start Date")
+                    DatePicker("", selection: $shiftData.employee.startDate)
+                        .labelsHidden()
+                }
+                .padding(.horizontal)
+                .padding(.vertical)
+            
+                HStack (spacing: 40) {
+                    Text("End Date")
                     DatePicker("", selection: $shiftData.employee.startDate)
                         .labelsHidden()
                 }
@@ -95,8 +101,8 @@ struct CreateShiftView: View {
                      .cornerRadius(8)
                 }
                 .padding(.bottom, 40)
-                .disabled(shiftData.employee.name == "" ? true : false )
-                .opacity(shiftData.employee.name == "" ? 0.5 : 1)
+                .disabled(shiftData.employee.isValid())
+                .opacity(shiftData.employee.isValid() ? 0.5 : 1)
             }
         }
         .background(Color.black.opacity(0.06))

@@ -50,6 +50,7 @@ class ShiftViewModel: ObservableObject {
         newShift.date = employee.startDate
         newShift.name = employee.name
         newShift.role = employee.role
+        newShift.color = employee.color
         
         do {
             try context.save()

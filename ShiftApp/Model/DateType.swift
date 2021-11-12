@@ -33,5 +33,9 @@ class Employee {
         startDate = Date()
         endDate = Date()
     }
+    
+    func isValid() -> Bool {
+        return !name.isEmpty && !color.isEmpty && !role.isEmpty
+    }
 }
 
