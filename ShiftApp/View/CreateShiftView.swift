@@ -24,15 +24,35 @@ struct CreateShiftView: View {
                  
             }.padding()
             
-            TextField("Full Name", text: $shiftData.name)
-                .padding()
+            HStack {
+                Text("Employee")
+                    .font(.title3)
+                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+                
+            }.padding(.horizontal)
+                
+            ExpandedDropdown(isExpanded: false, selectedValue: $shiftData.name, title: "Choose Employee", employees: shiftData.employees)
             
-            Divider()
-                .padding(.horizontal)
+            HStack {
+                Text("Roles")
+                    .font(.title3)
+                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+                
+            }.padding(.horizontal)
+            
+            ExpandedDropdown(isExpanded: false, selectedValue: $shiftData.selectedRole, title: "Choose Role", employees: shiftData.roles)
+            
+            HStack {
+                Text("Colors")
+                    .font(.title3)
+                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+                
+            }.padding(.horizontal)
             
             Spacer(minLength: 0)
+            
             HStack {
-                Text("When")
+                Text("Time & Date")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.black)
@@ -43,10 +63,13 @@ struct CreateShiftView: View {
             
             HStack (spacing: 40) {
                 DateButtonWidget(title: "Today", shiftData: shiftData)
+            
                 //DateButtonWidget(title: "Tomorrow", shiftData: homeData)
                 DatePicker("", selection: $shiftData.date)
                     .labelsHidden()
-            }.padding()
+            }
+            .padding(.horizontal)
+            .padding(.vertical)
         
             
             Button(action: { shiftData.writeData(context: context) }) {
@@ -75,6 +98,10 @@ struct CreateShiftView: View {
         .background(Color.black.opacity(0.06))
         .ignoresSafeArea(.all, edges: .bottom )
         .navigationTitle("Create Shift")
+        .onAppear {
+            shiftData.loadEmployees()
+            shiftData.loadRoles()
+        }
     }
 }
 

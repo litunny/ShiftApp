@@ -13,3 +13,8 @@ struct DateType {
     var Year : String
     var Month : String
 }
+
+struct CustomColor : Identifiable {
+    let id = UUID()
+    var name : String
+}

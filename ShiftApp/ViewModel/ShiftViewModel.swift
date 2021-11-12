@@ -13,6 +13,12 @@ class ShiftViewModel: ObservableObject {
     @Published var date : Date = Date()
     @Published var isNewData = false
     
+    @Published var colors : [String] = []
+    @Published var roles : [String] = []
+    @Published var employees : [String] = []
+    
+    @Published var selectedRole : String = ""
+    
     let calendar = Calendar.current
     
     func checkDate () -> String {
@@ -39,6 +45,7 @@ class ShiftViewModel: ObservableObject {
         let newShift  = Shift(context: context)
         newShift.date = date
         newShift.name = name
+        newShift.role = selectedRole
         
         do {
             try context.save()
@@ -46,5 +53,17 @@ class ShiftViewModel: ObservableObject {
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    func loadEmployees() {
+        employees = ["Michael", "Cameron", "Ethan", "Simon", "Jake"]
+    }
+    
+    func loadRoles() {
+        roles = ["Waitress", "Prep", "Cook", "Infront of Door"]
+    }
+    
+    func loadColors () {
+        colors = ["Red", "Yellow", "Blue", "Green", "Black", "Gray", "PinK"]
     }
 }

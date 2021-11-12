@@ -23,9 +23,18 @@ struct ShiftView: View {
                             ShiftRowWidget(shift: result)
                             Divider()
                         }
+                        .contextMenu {
+                            Button(action : { }) {
+                                Text("Edit")
+                            }
+                            
+                            Button(action : { }) {
+                                Text("Delete")
+                            }
+                        }
                     })
                 })
-                 .padding()
+                .padding()
             }
             
             Button(action: { shiftData.isNewData.toggle() }) {
