@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ShiftView: View {
+    
+    @StateObject var homeData = ShiftViewModel()
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -20,11 +23,13 @@ struct ShiftView: View {
         .navigationTitle("Shift")
         .toolbar {
             Button(action: {
-                
+                homeData.isNewData.toggle()
             }) {
-                Text("Add")
+               Image(systemName: "plus")
             }
-        }
+        }.sheet(isPresented: $homeData.isNewData, content: {
+            CreateShiftView(homeData: homeData)
+        })
     
     }
 }
