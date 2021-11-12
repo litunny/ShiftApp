@@ -13,14 +13,16 @@ struct DateButtonWidget: View {
     
     var body: some View {
         Button(action: {
-            
+            shiftData.update(value: title)
         }, label: {
            Text(title)
             .fontWeight(.bold)
-            .foregroundColor(.white)
+            .foregroundColor(shiftData.checkDate() == title ? .white : .gray)
             .padding(.vertical, 10)
             .padding(.horizontal, 20)
-            .background(Color("Color"))
+            .background(
+                shiftData.checkDate() == title ? Color("Color") : Color.gray
+             )
             .cornerRadius(8)
         })
     }
@@ -28,6 +30,6 @@ struct DateButtonWidget: View {
 
 struct DateButtonWidget_Previews: PreviewProvider {
     static var previews: some View {
-        DateButtonWidget(title: "Button", shiftData: ShiftViewModel())
+        DateButtonWidget(title: "Today", shiftData: ShiftViewModel())
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShiftView: View {
     
-    @StateObject var homeData = ShiftViewModel()
+    @StateObject var shiftData = ShiftViewModel()
     
     var body: some View {
         ScrollView {
@@ -23,12 +23,12 @@ struct ShiftView: View {
         .navigationTitle("Shift")
         .toolbar {
             Button(action: {
-                homeData.isNewData.toggle()
+                shiftData.isNewData.toggle()
             }) {
                Image(systemName: "plus")
             }
-        }.sheet(isPresented: $homeData.isNewData, content: {
-            CreateShiftView(homeData: homeData)
+        }.sheet(isPresented: $shiftData.isNewData, content: {
+            CreateShiftView(shiftData: shiftData)
         })
     
     }

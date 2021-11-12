@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CreateShiftView: View {
     
-    @ObservedObject var homeData : ShiftViewModel
+    @ObservedObject var shiftData : ShiftViewModel
+    @Environment(\.managedObjectContext) var context
     
     var body: some View {
         VStack {
@@ -23,7 +24,7 @@ struct CreateShiftView: View {
                  
             }.padding()
             
-            TextField("Full Name", text: $homeData.name)
+            TextField("Full Name", text: $shiftData.name)
                 .padding()
             
             Divider()
@@ -41,14 +42,14 @@ struct CreateShiftView: View {
             .padding()
             
             HStack (spacing: 40) {
-                DateButtonWidget(title: "Today", shiftData: homeData)
+                DateButtonWidget(title: "Today", shiftData: shiftData)
                 //DateButtonWidget(title: "Tomorrow", shiftData: homeData)
-                DatePicker("", selection: $homeData.date)
+                DatePicker("", selection: $shiftData.date)
                     .labelsHidden()
             }.padding()
         
             
-            Button(action: {}) {
+            Button(action: { shiftData.writeData(context: context) }) {
                  Label(
                     title : {
                         Text("Add Now")
@@ -77,6 +78,6 @@ struct CreateShiftView: View {
 
 struct CreateShiftView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateShiftView(homeData: ShiftViewModel())
+        CreateShiftView(shiftData: ShiftViewModel())
     }
 }
