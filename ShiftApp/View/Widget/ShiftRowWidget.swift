@@ -34,7 +34,7 @@ struct ShiftRowWidget: View {
             
             VStack(alignment:.trailing) {
                 Text("9 - 12 PM")
-                Text(shift.date ?? Date(), style: .date)
+                Text(shift.startDate ?? Date(), style: .date)
                     .fontWeight(.bold)
             }
             

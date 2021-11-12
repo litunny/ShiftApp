@@ -74,13 +74,12 @@ struct CreateShiftView: View {
             
                 HStack (spacing: 40) {
                     Text("End Date")
-                    DatePicker("", selection: $shiftData.employee.startDate)
+                    DatePicker("", selection: $shiftData.employee.endDate)
                         .labelsHidden()
                 }
                 .padding(.horizontal)
                 .padding(.vertical)
             
-                
                 Button(action: { shiftData.writeData(context: context) }) {
                      Label(
                         title : {

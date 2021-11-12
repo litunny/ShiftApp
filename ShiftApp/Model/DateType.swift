@@ -35,7 +35,16 @@ class Employee {
     }
     
     func isValid() -> Bool {
-        return !name.isEmpty && !color.isEmpty && !role.isEmpty
+        let value = name.isEmpty || color.isEmpty || role.isEmpty
+        
+        return value
+    }
+    
+    func clear () {
+        name = ""
+        color = ""
+        role = ""
+        startDate = Date()
+        endDate = Date()
     }
 }
-

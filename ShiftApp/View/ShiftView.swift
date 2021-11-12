@@ -11,7 +11,7 @@ struct ShiftView: View {
     
     @StateObject var shiftData = ShiftViewModel()
     
-    @FetchRequest(entity: Shift.entity(), sortDescriptors: [NSSortDescriptor(key : "date", ascending: true)], animation: .spring()) var results : FetchedResults<Shift>
+    @FetchRequest(entity: Shift.entity(), sortDescriptors: [NSSortDescriptor(key : "dateCreated", ascending: false)], animation: .spring()) var results : FetchedResults<Shift>
     
     var body: some View {
         
