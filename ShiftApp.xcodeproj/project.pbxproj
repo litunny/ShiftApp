@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0422139B273E6A8F00D05B73 /* ShiftAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422139A273E6A8F00D05B73 /* ShiftAppApp.swift */; };
+		0422139D273E6A8F00D05B73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422139C273E6A8F00D05B73 /* ContentView.swift */; };
+		0422139F273E6A9100D05B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0422139E273E6A9100D05B73 /* Assets.xcassets */; };
+		042213A2273E6A9100D05B73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042213A1273E6A9100D05B73 /* Preview Assets.xcassets */; };
+		042213A4273E6A9100D05B73 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213A3273E6A9100D05B73 /* Persistence.swift */; };
+		042213A7273E6A9100D05B73 /* ShiftApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042213A5273E6A9100D05B73 /* ShiftApp.xcdatamodeld */; };
+		042213B2273E6A9100D05B73 /* ShiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213B1273E6A9100D05B73 /* ShiftAppTests.swift */; };
+		042213BD273E6A9100D05B73 /* ShiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213BC273E6A9100D05B73 /* ShiftAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042213AE273E6A9100D05B73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0422138F273E6A8F00D05B73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04221396273E6A8F00D05B73;
+			remoteInfo = ShiftApp;
+		};
+		042213B9273E6A9100D05B73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0422138F273E6A8F00D05B73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04221396273E6A8F00D05B73;
+			remoteInfo = ShiftApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04221397273E6A8F00D05B73 /* ShiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0422139A273E6A8F00D05B73 /* ShiftAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftAppApp.swift; sourceTree = "<group>"; };
+		0422139C273E6A8F00D05B73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0422139E273E6A9100D05B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		042213A1273E6A9100D05B73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		042213A3273E6A9100D05B73 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		042213A6273E6A9100D05B73 /* ShiftApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShiftApp.xcdatamodel; sourceTree = "<group>"; };
+		042213A8273E6A9100D05B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042213AD273E6A9100D05B73 /* ShiftAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042213B1273E6A9100D05B73 /* ShiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftAppTests.swift; sourceTree = "<group>"; };
+		042213B3273E6A9100D05B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042213B8273E6A9100D05B73 /* ShiftAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042213BC273E6A9100D05B73 /* ShiftAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftAppUITests.swift; sourceTree = "<group>"; };
+		042213BE273E6A9100D05B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04221394273E6A8F00D05B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042213AA273E6A9100D05B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042213B5273E6A9100D05B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0422138E273E6A8F00D05B73 = {
+			isa = PBXGroup;
+			children = (
+				04221399273E6A8F00D05B73 /* ShiftApp */,
+				042213B0273E6A9100D05B73 /* ShiftAppTests */,
+				042213BB273E6A9100D05B73 /* ShiftAppUITests */,
+				04221398273E6A8F00D05B73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04221398273E6A8F00D05B73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04221397273E6A8F00D05B73 /* ShiftApp.app */,
+				042213AD273E6A9100D05B73 /* ShiftAppTests.xctest */,
+				042213B8273E6A9100D05B73 /* ShiftAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04221399273E6A8F00D05B73 /* ShiftApp */ = {
+			isa = PBXGroup;
+			children = (
+				0422139A273E6A8F00D05B73 /* ShiftAppApp.swift */,
+				0422139C273E6A8F00D05B73 /* ContentView.swift */,
+				0422139E273E6A9100D05B73 /* Assets.xcassets */,
+				042213A3273E6A9100D05B73 /* Persistence.swift */,
+				042213A8273E6A9100D05B73 /* Info.plist */,
+				042213A5273E6A9100D05B73 /* ShiftApp.xcdatamodeld */,
+				042213A0273E6A9100D05B73 /* Preview Content */,
+			);
+			path = ShiftApp;
+			sourceTree = "<group>";
+		};
+		042213A0273E6A9100D05B73 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				042213A1273E6A9100D05B73 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		042213B0273E6A9100D05B73 /* ShiftAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				042213B1273E6A9100D05B73 /* ShiftAppTests.swift */,
+				042213B3273E6A9100D05B73 /* Info.plist */,
+			);
+			path = ShiftAppTests;
+			sourceTree = "<group>";
+		};
+		042213BB273E6A9100D05B73 /* ShiftAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				042213BC273E6A9100D05B73 /* ShiftAppUITests.swift */,
+				042213BE273E6A9100D05B73 /* Info.plist */,
+			);
+			path = ShiftAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04221396273E6A8F00D05B73 /* ShiftApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042213C1273E6A9100D05B73 /* Build configuration list for PBXNativeTarget "ShiftApp" */;
+			buildPhases = (
+				04221393273E6A8F00D05B73 /* Sources */,
+				04221394273E6A8F00D05B73 /* Frameworks */,
+				04221395273E6A8F00D05B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiftApp;
+			productName = ShiftApp;
+			productReference = 04221397273E6A8F00D05B73 /* ShiftApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		042213AC273E6A9100D05B73 /* ShiftAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042213C4273E6A9100D05B73 /* Build configuration list for PBXNativeTarget "ShiftAppTests" */;
+			buildPhases = (
+				042213A9273E6A9100D05B73 /* Sources */,
+				042213AA273E6A9100D05B73 /* Frameworks */,
+				042213AB273E6A9100D05B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042213AF273E6A9100D05B73 /* PBXTargetDependency */,
+			);
+			name = ShiftAppTests;
+			productName = ShiftAppTests;
+			productReference = 042213AD273E6A9100D05B73 /* ShiftAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		042213B7273E6A9100D05B73 /* ShiftAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042213C7273E6A9100D05B73 /* Build configuration list for PBXNativeTarget "ShiftAppUITests" */;
+			buildPhases = (
+				042213B4273E6A9100D05B73 /* Sources */,
+				042213B5273E6A9100D05B73 /* Frameworks */,
+				042213B6273E6A9100D05B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042213BA273E6A9100D05B73 /* PBXTargetDependency */,
+			);
+			name = ShiftAppUITests;
+			productName = ShiftAppUITests;
+			productReference = 042213B8273E6A9100D05B73 /* ShiftAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0422138F273E6A8F00D05B73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					04221396273E6A8F00D05B73 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					042213AC273E6A9100D05B73 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 04221396273E6A8F00D05B73;
+					};
+					042213B7273E6A9100D05B73 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 04221396273E6A8F00D05B73;
+					};
+				};
+			};
+			buildConfigurationList = 04221392273E6A8F00D05B73 /* Build configuration list for PBXProject "ShiftApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0422138E273E6A8F00D05B73;
+			productRefGroup = 04221398273E6A8F00D05B73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04221396273E6A8F00D05B73 /* ShiftApp */,
+				042213AC273E6A9100D05B73 /* ShiftAppTests */,
+				042213B7273E6A9100D05B73 /* ShiftAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04221395273E6A8F00D05B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042213A2273E6A9100D05B73 /* Preview Assets.xcassets in Resources */,
+				0422139F273E6A9100D05B73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042213AB273E6A9100D05B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042213B6273E6A9100D05B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04221393273E6A8F00D05B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042213A7273E6A9100D05B73 /* ShiftApp.xcdatamodeld in Sources */,
+				042213A4273E6A9100D05B73 /* Persistence.swift in Sources */,
+				0422139D273E6A8F00D05B73 /* ContentView.swift in Sources */,
+				0422139B273E6A8F00D05B73 /* ShiftAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042213A9273E6A9100D05B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042213B2273E6A9100D05B73 /* ShiftAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042213B4273E6A9100D05B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042213BD273E6A9100D05B73 /* ShiftAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		042213AF273E6A9100D05B73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04221396273E6A8F00D05B73 /* ShiftApp */;
+			targetProxy = 042213AE273E6A9100D05B73 /* PBXContainerItemProxy */;
+		};
+		042213BA273E6A9100D05B73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04221396273E6A8F00D05B73 /* ShiftApp */;
+			targetProxy = 042213B9273E6A9100D05B73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		042213BF273E6A9100D05B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		042213C0273E6A9100D05B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		042213C2273E6A9100D05B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ShiftApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G494SFC9XN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShiftApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.osinnowo.ShiftApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		042213C3273E6A9100D05B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ShiftApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G494SFC9XN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShiftApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.osinnowo.ShiftApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		042213C5273E6A9100D05B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G494SFC9XN;
+				INFOPLIST_FILE = ShiftAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.osinnowo.ShiftAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftApp.app/ShiftApp";
+			};
+			name = Debug;
+		};
+		042213C6273E6A9100D05B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G494SFC9XN;
+				INFOPLIST_FILE = ShiftAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.osinnowo.ShiftAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftApp.app/ShiftApp";
+			};
+			name = Release;
+		};
+		042213C8273E6A9100D05B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G494SFC9XN;
+				INFOPLIST_FILE = ShiftAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.osinnowo.ShiftAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShiftApp;
+			};
+			name = Debug;
+		};
+		042213C9273E6A9100D05B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G494SFC9XN;
+				INFOPLIST_FILE = ShiftAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.osinnowo.ShiftAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShiftApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04221392273E6A8F00D05B73 /* Build configuration list for PBXProject "ShiftApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042213BF273E6A9100D05B73 /* Debug */,
+				042213C0273E6A9100D05B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042213C1273E6A9100D05B73 /* Build configuration list for PBXNativeTarget "ShiftApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042213C2273E6A9100D05B73 /* Debug */,
+				042213C3273E6A9100D05B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042213C4273E6A9100D05B73 /* Build configuration list for PBXNativeTarget "ShiftAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042213C5273E6A9100D05B73 /* Debug */,
+				042213C6273E6A9100D05B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042213C7273E6A9100D05B73 /* Build configuration list for PBXNativeTarget "ShiftAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042213C8273E6A9100D05B73 /* Debug */,
+				042213C9273E6A9100D05B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		042213A5273E6A9100D05B73 /* ShiftApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				042213A6273E6A9100D05B73 /* ShiftApp.xcdatamodel */,
+			);
+			currentVersion = 042213A6273E6A9100D05B73 /* ShiftApp.xcdatamodel */;
+			path = ShiftApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0422138F273E6A8F00D05B73 /* Project object */;
+}
