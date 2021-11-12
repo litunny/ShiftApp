@@ -18,3 +18,20 @@ struct CustomColor : Identifiable {
     let id = UUID()
     var name : String
 }
+
+class Employee {
+    var name : String
+    var color: String
+    var role : String
+    var startDate : Date
+    var endDate : Date
+    
+    init() {
+        name = ""
+        color = ""
+        role = ""
+        startDate = Date()
+        endDate = Date()
+    }
+}
+

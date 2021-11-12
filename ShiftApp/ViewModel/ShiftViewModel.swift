@@ -9,22 +9,26 @@ import Foundation
 import CoreData
 
 class ShiftViewModel: ObservableObject {
-    @Published var name : String = ""
-    @Published var date : Date = Date()
+    @Published var employee : Employee = Employee()
+    
+    
     @Published var isNewData = false
     
     @Published var colors : [String] = []
     @Published var roles : [String] = []
     @Published var employees : [String] = []
     
-    @Published var selectedRole : String = ""
+    //@Published var date : Date = Date()
+    //@Published var name : String = ""
+    //@Published var selectedRole : String = ""
+    //@Published var selectedColor : String = ""
     
     let calendar = Calendar.current
     
     func checkDate () -> String {
-        if calendar.isDateInToday(date) {
+        if calendar.isDateInToday(employee.startDate) {
             return "Today"
-        } else if calendar.isDateInTomorrow(date)  {
+        } else if calendar.isDateInTomorrow(employee.startDate)  {
             return "Tomorrow "
         } else {
             return "Other Day"
@@ -33,9 +37,9 @@ class ShiftViewModel: ObservableObject {
     
     func update(value : String) {
         if value == "Today" {
-             date = Date()
+            employee.startDate = Date()
         } else if value == "Tomorrow" {
-            date = calendar.date(byAdding: .day, value: 1, to: Date())!
+            employee.startDate = calendar.date(byAdding: .day, value: 1, to: Date())!
         } else {
             
         }
@@ -43,9 +47,9 @@ class ShiftViewModel: ObservableObject {
     
     func writeData(context : NSManagedObjectContext) {
         let newShift  = Shift(context: context)
-        newShift.date = date
-        newShift.name = name
-        newShift.role = selectedRole
+        newShift.date = employee.startDate
+        newShift.name = employee.name
+        newShift.role = employee.role
         
         do {
             try context.save()
@@ -64,6 +68,6 @@ class ShiftViewModel: ObservableObject {
     }
     
     func loadColors () {
-        colors = ["Red", "Yellow", "Blue", "Green", "Black", "Gray", "PinK"]
+        colors = ["Red", "Yellow", "Blue", "Green", "Black", "Gray", "Pink", "Orange"]
     }
 }

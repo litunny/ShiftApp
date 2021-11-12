@@ -23,7 +23,7 @@
 		042213EE273E6E1500D05B73 /* ShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213ED273E6E1500D05B73 /* ShiftViewModel.swift */; };
 		042213F3273E77B200D05B73 /* DateButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213F2273E77B200D05B73 /* DateButtonWidget.swift */; };
 		042213F8273E96D000D05B73 /* ExpandedDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213F7273E96D000D05B73 /* ExpandedDropdown.swift */; };
-		042213FD273EAAA100D05B73 /* CircleColorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213FC273EAAA100D05B73 /* CircleColorWidget.swift */; };
+		04221410273EBB6200D05B73 /* CustomColorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422140F273EBB6200D05B73 /* CustomColorWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 		042213ED273E6E1500D05B73 /* ShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewModel.swift; sourceTree = "<group>"; };
 		042213F2273E77B200D05B73 /* DateButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButtonWidget.swift; sourceTree = "<group>"; };
 		042213F7273E96D000D05B73 /* ExpandedDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedDropdown.swift; sourceTree = "<group>"; };
-		042213FC273EAAA100D05B73 /* CircleColorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColorWidget.swift; sourceTree = "<group>"; };
+		0422140F273EBB6200D05B73 /* CustomColorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 				042213D9273E6B2000D05B73 /* ShiftRowWidget.swift */,
 				042213F2273E77B200D05B73 /* DateButtonWidget.swift */,
 				042213F7273E96D000D05B73 /* ExpandedDropdown.swift */,
-				042213FC273EAAA100D05B73 /* CircleColorWidget.swift */,
+				0422140F273EBB6200D05B73 /* CustomColorWidget.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -325,7 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				042213D2273E6B0A00D05B73 /* CustomDatePicker.swift in Sources */,
-				042213FD273EAAA100D05B73 /* CircleColorWidget.swift in Sources */,
 				042213F3273E77B200D05B73 /* DateButtonWidget.swift in Sources */,
 				042213E9273E6BB100D05B73 /* CreateShiftView.swift in Sources */,
 				042213F8273E96D000D05B73 /* ExpandedDropdown.swift in Sources */,
@@ -337,6 +336,7 @@
 				0422139D273E6A8F00D05B73 /* ContentView.swift in Sources */,
 				042213DF273E6B6D00D05B73 /* DateType.swift in Sources */,
 				0422139B273E6A8F00D05B73 /* ShiftAppApp.swift in Sources */,
+				04221410273EBB6200D05B73 /* CustomColorWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

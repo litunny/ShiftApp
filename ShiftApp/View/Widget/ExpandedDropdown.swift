@@ -11,14 +11,14 @@ struct ExpandedDropdown: View {
     @State var isExpanded = true
     @Binding var selectedValue : String
     @State var title : String
-    var employees : [String]
+    var options : [String]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             DisclosureGroup(selectedValue , isExpanded: $isExpanded) {
                 ScrollView(.vertical, showsIndicators: true){
                     VStack {
-                        ForEach(employees, id: \.self) { value in
+                        ForEach(options, id: \.self) { value in
                             Text("\(value)")
                                 .frame(maxWidth: .infinity)
                                 .font(.title3)
@@ -46,6 +46,6 @@ struct ExpandedDropdown: View {
 
 struct ExpandedDropdown_Previews: PreviewProvider {
     static var previews: some View {
-        ExpandedDropdown(selectedValue: .constant(""), title: "Choose Employee", employees: ["Anna", "Jane", "Williams", "Shawn", "Alisha", "Kimberly"])
+        ExpandedDropdown(selectedValue: .constant(""), title: "Choose Options", options: ["Option A", "Option B", "Option C", "Option D", "Option E", "Option F"])
     }
 }
