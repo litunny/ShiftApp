@@ -21,6 +21,7 @@
 		042213E4273E6B9B00D05B73 /* ShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213E3273E6B9B00D05B73 /* ShiftView.swift */; };
 		042213E9273E6BB100D05B73 /* CreateShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213E8273E6BB100D05B73 /* CreateShiftView.swift */; };
 		042213EE273E6E1500D05B73 /* ShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213ED273E6E1500D05B73 /* ShiftViewModel.swift */; };
+		042213F3273E77B200D05B73 /* DateButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213F2273E77B200D05B73 /* DateButtonWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		042213E3273E6B9B00D05B73 /* ShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftView.swift; sourceTree = "<group>"; };
 		042213E8273E6BB100D05B73 /* CreateShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftView.swift; sourceTree = "<group>"; };
 		042213ED273E6E1500D05B73 /* ShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewModel.swift; sourceTree = "<group>"; };
+		042213F2273E77B200D05B73 /* DateButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButtonWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				042213D1273E6B0A00D05B73 /* CustomDatePicker.swift */,
 				042213D9273E6B2000D05B73 /* ShiftRowWidget.swift */,
+				042213F2273E77B200D05B73 /* DateButtonWidget.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042213D2273E6B0A00D05B73 /* CustomDatePicker.swift in Sources */,
+				042213F3273E77B200D05B73 /* DateButtonWidget.swift in Sources */,
 				042213E9273E6BB100D05B73 /* CreateShiftView.swift in Sources */,
 				042213A7273E6A9100D05B73 /* ShiftApp.xcdatamodeld in Sources */,
 				042213A4273E6A9100D05B73 /* Persistence.swift in Sources */,
