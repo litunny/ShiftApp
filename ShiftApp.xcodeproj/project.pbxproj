@@ -15,6 +15,12 @@
 		042213A7273E6A9100D05B73 /* ShiftApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042213A5273E6A9100D05B73 /* ShiftApp.xcdatamodeld */; };
 		042213B2273E6A9100D05B73 /* ShiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213B1273E6A9100D05B73 /* ShiftAppTests.swift */; };
 		042213BD273E6A9100D05B73 /* ShiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213BC273E6A9100D05B73 /* ShiftAppUITests.swift */; };
+		042213D2273E6B0A00D05B73 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213D1273E6B0A00D05B73 /* CustomDatePicker.swift */; };
+		042213DA273E6B2000D05B73 /* ShiftRowWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213D9273E6B2000D05B73 /* ShiftRowWidget.swift */; };
+		042213DF273E6B6D00D05B73 /* DateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213DE273E6B6D00D05B73 /* DateType.swift */; };
+		042213E4273E6B9B00D05B73 /* ShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213E3273E6B9B00D05B73 /* ShiftView.swift */; };
+		042213E9273E6BB100D05B73 /* CreateShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213E8273E6BB100D05B73 /* CreateShiftView.swift */; };
+		042213EE273E6E1500D05B73 /* ShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213ED273E6E1500D05B73 /* ShiftViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		042213B8273E6A9100D05B73 /* ShiftAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042213BC273E6A9100D05B73 /* ShiftAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftAppUITests.swift; sourceTree = "<group>"; };
 		042213BE273E6A9100D05B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042213D1273E6B0A00D05B73 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		042213D9273E6B2000D05B73 /* ShiftRowWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftRowWidget.swift; sourceTree = "<group>"; };
+		042213DE273E6B6D00D05B73 /* DateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateType.swift; sourceTree = "<group>"; };
+		042213E3273E6B9B00D05B73 /* ShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftView.swift; sourceTree = "<group>"; };
+		042213E8273E6BB100D05B73 /* CreateShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftView.swift; sourceTree = "<group>"; };
+		042213ED273E6E1500D05B73 /* ShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		04221399273E6A8F00D05B73 /* ShiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				042213CF273E6ADF00D05B73 /* Model */,
+				042213CE273E6ADA00D05B73 /* View */,
+				042213CD273E6AD500D05B73 /* ViewModel */,
 				0422139A273E6A8F00D05B73 /* ShiftAppApp.swift */,
 				0422139C273E6A8F00D05B73 /* ContentView.swift */,
 				0422139E273E6A9100D05B73 /* Assets.xcassets */,
@@ -134,6 +149,41 @@
 				042213BE273E6A9100D05B73 /* Info.plist */,
 			);
 			path = ShiftAppUITests;
+			sourceTree = "<group>";
+		};
+		042213CD273E6AD500D05B73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				042213ED273E6E1500D05B73 /* ShiftViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042213CE273E6ADA00D05B73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042213D0273E6AF100D05B73 /* Widget */,
+				042213E3273E6B9B00D05B73 /* ShiftView.swift */,
+				042213E8273E6BB100D05B73 /* CreateShiftView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042213CF273E6ADF00D05B73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042213DE273E6B6D00D05B73 /* DateType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042213D0273E6AF100D05B73 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				042213D1273E6B0A00D05B73 /* CustomDatePicker.swift */,
+				042213D9273E6B2000D05B73 /* ShiftRowWidget.swift */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042213D2273E6B0A00D05B73 /* CustomDatePicker.swift in Sources */,
+				042213E9273E6BB100D05B73 /* CreateShiftView.swift in Sources */,
 				042213A7273E6A9100D05B73 /* ShiftApp.xcdatamodeld in Sources */,
 				042213A4273E6A9100D05B73 /* Persistence.swift in Sources */,
+				042213E4273E6B9B00D05B73 /* ShiftView.swift in Sources */,
+				042213EE273E6E1500D05B73 /* ShiftViewModel.swift in Sources */,
+				042213DA273E6B2000D05B73 /* ShiftRowWidget.swift in Sources */,
 				0422139D273E6A8F00D05B73 /* ContentView.swift in Sources */,
+				042213DF273E6B6D00D05B73 /* DateType.swift in Sources */,
 				0422139B273E6A8F00D05B73 /* ShiftAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
